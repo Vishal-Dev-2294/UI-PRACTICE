@@ -190,7 +190,7 @@ function Hero() {
         <div className=" absolute bottom-1 bg-pink-500 h-35 w-145 rounded-2xl p-6">
           <div className="flex justify-between">
             <div className="flex justify-between flex-col">
-            <h3 className="text-xs text-white "> Request Early Access to get Started</h3>
+            <h3 className="text-xs text-white"> Request Early Access to get Started</h3>
             <p className="text-lg text-white w-95 mt-5"> Registered Today & start exploring the endless possibilites</p>
             </div>
             <div className="mt-4"> 

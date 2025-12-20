@@ -42,11 +42,11 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-5">
         {links.map((elem, idx) => {
           return (
             <a
-              className="transform-none text-xl hover:text-gray-300"
+              className="transform-none text-lg hover:text-gray-300"
               href={elem.href}
             >
               {" "}
