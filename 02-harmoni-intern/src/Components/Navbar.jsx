@@ -1,28 +1,29 @@
+import {Link} from 'react-router-dom'
 function Navbar() {
   let links = [
     {
       title: "Home",
-      href: "",
+      to: "/",
     },
 
     {
       title: "About",
-      href: "",
+      to: "/About",
     },
 
     {
       title: "Events",
-      href: "",
+      to: "/Events",
     },
 
     {
       title: "gallery",
-      href: "",
+      to: "/Gallery",
     },
 
     {
       title: "Contact",
-      href: "",
+      to: "/Contact",
     },
   ];
   return (
@@ -45,13 +46,13 @@ function Navbar() {
       <div className="flex items-center gap-5">
         {links.map((elem, idx) => {
           return (
-            <a
+            <Link 
               className="transform-none text-lg hover:text-gray-300"
-              href={elem.href}
+              to={elem.to}
             >
               {" "}
               {elem.title}{" "}
-            </a>
+            </Link>
           );
         })}
       </div>
