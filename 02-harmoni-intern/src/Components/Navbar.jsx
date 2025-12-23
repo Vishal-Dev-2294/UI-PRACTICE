@@ -17,7 +17,7 @@ function Navbar() {
     },
 
     {
-      title: "gallery",
+      title: "Gallery",
       to: "/Gallery",
     },
 
