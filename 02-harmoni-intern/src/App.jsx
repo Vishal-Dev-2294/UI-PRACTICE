@@ -4,6 +4,7 @@ import Hero from "./Pages/Hero";
 import About from "./Pages/About";
 import Notfound from "./Pages/Notfound";
 import Events from "./Pages/Events";
+import Event from "./Pages/Event";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
     <Routes> 
         <Route path="/" element={<Hero />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Events" element={<Events />}/>
-
+        <Route path="/Events" element={<Events />} /> 
+        <Route path="/Events/Event" element={<Event />} />
         <Route path="*" element={<Notfound />} />
     </Routes>
     </>
