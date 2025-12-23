@@ -20,9 +20,21 @@ const Container = () => {
           bg-[linear-gradient(to_bottom,rgba(212,212,216,0.5),rgba(228,228,231,0.3),transparent)]
          "
         />
-
         <Navbar />
         <Hero />
+        <div className="relative w-full">
+          <div className="h-px w-full absolute inset-x-0 bg-linear-to-r from-neutral-300/50 via-neutral-200 to-transparent pointer-events-none z-0">
+            <div className="max-w-7xl mx-auto p-2">
+              <img
+                src="/hero-ui-v6.WEBP"
+                alt="banner image"
+                width={1000}
+                height={1000}
+                className="rounded-xl w-full object-cover object-top-left border border-neutral-200 shadow-xl mask-b-from-0% to-100%"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

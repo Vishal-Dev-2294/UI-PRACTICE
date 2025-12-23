@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center px-4 py-4'>
-      <a href="/"> <img src="/logo.svg" alt="logo.svg" height={100} width={100} />  </a>
+      <a href="/"> <img src="/logo.svg" alt="logo.svg" height={80} width={80} />  </a>
       <div className='flex justify-center items-center gap-8'>
         {navLinks.map((elem , idx) => {
           return (
