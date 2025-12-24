@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Events = () => {
+  const navigation = useNavigate();
   const eventsData = [
     {
       title: "Wedding Ceremony",
@@ -28,8 +30,6 @@ const Events = () => {
     },
   ];
 
- 
-
   return (
     <>
       <div className="bg-[url(https://images.unsplash.com/photo-1607267212311-cbf1b39f7825?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] h-[40vh] flex justify-center items-center w-full bg-cover bg-bottom bg-no-repeat text-amber-50"></div>
@@ -39,7 +39,10 @@ const Events = () => {
           {eventsData.map((elem, idx) => {
             return (
               <>
-                <div className="bg-white text-black rounded-md">
+                <div
+                  onClick={() => navigation("/Events/Event")}
+                  className="bg-white text-black rounded-md"
+                >
                   <div className="w-110 h-90 overflow-hidden rounded-lg">
                     <img
                       className="w-full h-full object-cover"
@@ -57,7 +60,6 @@ const Events = () => {
           })}
         </div>
       </div>
-
     </>
   );
 };

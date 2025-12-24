@@ -107,7 +107,7 @@ function About() {
         </div>
       </div>
 
-      <div className=" bg-black h-[5-vh] w-full p-4 px-8">
+      <div className=" bg-black h-[5vh] w-full p-4 px-8">
         <div className="h-full mt-10 w-full">
           <div className="grid grid-cols-3 gap-9">
             {cardContent.map((elem, idx) => {
