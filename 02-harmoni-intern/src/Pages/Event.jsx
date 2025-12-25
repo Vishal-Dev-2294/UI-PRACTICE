@@ -1,6 +1,7 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Event = () => {
+    const navigation = useNavigate();
   const matchesData = [
     {
       image:
@@ -86,7 +87,7 @@ const Event = () => {
                     </span>{" "}
                   </div>
                   <div className="flex items-center justify-center">
-                    <button className=" absolute bottom-1 active:scale-95 text-center px-3 py-2 rounded-md bg-orange-500 font-bold text-white">
+                    <button onClick={() => navigation("/Details") } className=" absolute bottom-1 active:scale-95 text-center px-3 py-2 rounded-md bg-orange-500 font-bold text-white">
                       {" "}
                       Book Ticket {"->"}
                     </button>

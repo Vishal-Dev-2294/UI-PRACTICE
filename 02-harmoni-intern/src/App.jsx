@@ -5,6 +5,8 @@ import About from "./Pages/About";
 import Notfound from "./Pages/Notfound";
 import Events from "./Pages/Events";
 import Event from "./Pages/Event";
+import Details from "./Pages/Details";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Events" element={<Events />} /> 
         <Route path="/Events/Event" element={<Event />} />
+        <Route path="/Details"  element={<Details />}/>
+        <Route path="/Contact" element={<Contact />}/>
         <Route path="*" element={<Notfound />} />
     </Routes>
     </>
