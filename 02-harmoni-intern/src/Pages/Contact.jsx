@@ -1,8 +1,7 @@
-const Form = () => {
+const Contact = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-black">
       <form className="w-full max-w-md border border-white rounded-lg p-6">
-        
         <h2 className="text-white text-2xl font-semibold mb-6 text-center">
           Contact Form
         </h2>
@@ -25,7 +24,6 @@ const Form = () => {
           />
         </div>
 
-        {/* Password */}
         <div className="mb-4">
           <label className="block text-white mb-1">Phone Number</label>
           <input
@@ -44,17 +42,15 @@ const Form = () => {
           />
         </div>
 
-        {/* Button */}
         <button
           type="submit"
           className="w-full border font-bold border-white text-white py-2 rounded hover:bg-white hover:text-black transition"
         >
           Submit
         </button>
-
       </form>
     </div>
   );
 };
 
-export default Form;
+export default Contact;
