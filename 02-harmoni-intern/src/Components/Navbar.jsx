@@ -1,5 +1,6 @@
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 function Navbar() {
+  const navigation = useNavigate()
   let links = [
     {
       title: "Home",
@@ -59,7 +60,8 @@ function Navbar() {
 
       <div className="flex items-center gap-2">
         <img
-          className="size-10 rounded-full"
+        onClick={ () => navigation("/Account")}
+          className="size-10 rounded-full cursor-pointer"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZ1Vm9DCt3CaDGvAII2F_I7HiG6r71giIqA&s"
           alt="sparks logo"
         />

@@ -7,6 +7,7 @@ import Events from "./Pages/Events";
 import Event from "./Pages/Event";
 import Details from "./Pages/Details";
 import Contact from "./Pages/Contact";
+import Account from "./Pages/Account";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Events/Event" element={<Event />} />
         <Route path="/Details"  element={<Details />}/>
         <Route path="/Contact" element={<Contact />}/>
+        <Route path="/Account" element={<Account />} />
         <Route path="*" element={<Notfound />} />
     </Routes>
     </>
