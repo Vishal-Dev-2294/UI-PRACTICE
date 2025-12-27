@@ -8,6 +8,8 @@ import Event from "./Pages/Event";
 import Details from "./Pages/Details";
 import Contact from "./Pages/Contact";
 import Account from "./Pages/Account";
+import Changepass from "./Pages/Changepass";
+import MyBookings from "./Pages/MyBookings";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/Details"  element={<Details />}/>
         <Route path="/Contact" element={<Contact />}/>
         <Route path="/Account" element={<Account />} />
+        <Route path="/Changepass" element={<Changepass />} />
+        <Route path="/MyBookings" element={<MyBookings />} />
         <Route path="*" element={<Notfound />} />
     </Routes>
     </>

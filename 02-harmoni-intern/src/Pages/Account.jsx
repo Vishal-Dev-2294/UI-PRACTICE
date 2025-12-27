@@ -7,8 +7,10 @@ import { faPencil } from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-solid-svg-icons";
 import { faPerson } from "@fortawesome/free-solid-svg-icons";
 import { faMobile } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Account = () => {
+  const navigation = useNavigate()
   return (
     <div className="bg-black h-screen w-full">
       <div className="bg-blue-900 max-w-4xl h-screen mx-auto text-white">
@@ -27,7 +29,7 @@ const Account = () => {
             </div>
             <div className="text-xl font-bold"> Home </div>
           </div>
-          <div className="text-xl font-bold">Change Password</div>
+          <div onClick={() => navigation("/Changepass")} className="text-xl font-bold">Change Password</div>
         </div>
         <div className="bg-blue-600 h-[50vh] p-2">
           <div className="font-bold text-xl">Change Account Details</div>

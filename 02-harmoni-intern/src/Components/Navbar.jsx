@@ -84,7 +84,7 @@ function Navbar() {
               Account
             </li>
             <li
-              onClick={() => navigation("/bookings")}
+              onClick={() => navigation("/MyBookings")}
               className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
             >
               My Bookings
