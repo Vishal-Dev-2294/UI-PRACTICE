@@ -10,6 +10,7 @@ import Contact from "./Pages/Contact";
 import Account from "./Pages/Account";
 import Changepass from "./Pages/Changepass";
 import MyBookings from "./Pages/MyBookings";
+import ChangeUserDetail from "./Pages/ChangeUserDetail";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Account" element={<Account />} />
         <Route path="/Changepass" element={<Changepass />} />
         <Route path="/MyBookings" element={<MyBookings />} />
+        <Route path="/ChangeUserDetail" element={<ChangeUserDetail />} />
         <Route path="*" element={<Notfound />} />
     </Routes>
     </>
