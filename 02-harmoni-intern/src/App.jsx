@@ -11,11 +11,12 @@ import Account from "./Pages/Account";
 import Changepass from "./Pages/Changepass";
 import MyBookings from "./Pages/MyBookings";
 import ChangeUserDetail from "./Pages/ChangeUserDetail";
+import Admin from "./Pages/Admin";
 
 function App() {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
     <Routes> 
         <Route path="/" element={<Hero />} />
         <Route path="/About" element={<About />} />
@@ -28,6 +29,7 @@ function App() {
         <Route path="/MyBookings" element={<MyBookings />} />
         <Route path="/ChangeUserDetail" element={<ChangeUserDetail />} />
         <Route path="*" element={<Notfound />} />
+        <Route path="Admin" element={<Admin />} />
     </Routes>
     </>
   )
