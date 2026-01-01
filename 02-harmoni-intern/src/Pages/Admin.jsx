@@ -164,7 +164,7 @@ const Admin = () => {
             <div className="flex gap-2 items-center">
               <div>
                 <img
-                  className="size-10 rounded-full cursor-pointer"
+                  className="size-12 rounded-full cursor-pointer"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaZ1Vm9DCt3CaDGvAII2F_I7HiG6r71giIqA&s"
                   alt="sparks logo"
                 />
