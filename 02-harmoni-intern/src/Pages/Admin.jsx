@@ -4,8 +4,10 @@ import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faImage } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import {useNavigate} from 'react-router-dom';
 
 const Admin = () => {
+  const navigation = useNavigate()
   const usersList = [
     {
       no: 1,
@@ -108,15 +110,15 @@ const Admin = () => {
                 <div className="text-xs font-extrabold flex items-center">
                   <FontAwesomeIcon icon={faCalendar} />
                 </div>
-                <div>
-                  <h3 className="text-sm"> Event Post </h3>
+                <div onClick={() => navigation("/Admin/AddEvent")}>
+                  <h3 className="text-sm cursor-pointer"> Event Post </h3>
                 </div>
               </div>
               <div className="flex item-center gap-2 font-bold">
                 <div className="text-xs font-extrabold flex items-center">
                   <FontAwesomeIcon icon={faList} />
                 </div>
-                <div>
+                <div onClick={() => navigation("/Admin/Category")}>
                   <h3 className="text-sm"> Post Category </h3>
                 </div>
               </div>
@@ -133,7 +135,7 @@ const Admin = () => {
                   <FontAwesomeIcon icon={faUser} />
                 </div>
                 <div>
-                  <h3 className="text-sm"> User List </h3>
+                  <h3 className="text-sm"> Contact List </h3>
                 </div>
               </div>
             </div>
