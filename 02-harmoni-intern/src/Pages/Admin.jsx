@@ -4,10 +4,11 @@ import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faImage } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
-import {useNavigate} from 'react-router-dom';
+import UserList from "./UserList";
+import AddEvent from "./AddEvent";
+import { Link, Outlet } from "react-router-dom";
 
 const Admin = () => {
-  const navigation = useNavigate()
   const usersList = [
     {
       no: 1,
@@ -103,23 +104,30 @@ const Admin = () => {
                   <FontAwesomeIcon icon={faList} />
                 </div>
                 <div>
-                  <h3 className="text-sm"> User List </h3>
+                  <Link to=".">
+                    <h3 className="text-sm"> User List </h3>
+                  </Link>
                 </div>
               </div>
               <div className="flex item-center gap-2 font-bold">
                 <div className="text-xs font-extrabold flex items-center">
                   <FontAwesomeIcon icon={faCalendar} />
                 </div>
-                <div onClick={() => navigation("/Admin/AddEvent")}>
-                  <h3 className="text-sm cursor-pointer"> Event Post </h3>
+                <div>
+                  <Link to="AddEvent">
+                    <h3 className="text-sm cursor-pointer"> Event Post </h3>
+                  </Link>
                 </div>
               </div>
               <div className="flex item-center gap-2 font-bold">
                 <div className="text-xs font-extrabold flex items-center">
                   <FontAwesomeIcon icon={faList} />
                 </div>
-                <div onClick={() => navigation("/Admin/Category")}>
-                  <h3 className="text-sm"> Post Category </h3>
+
+                <div>
+                  <Link to="Category">
+                    <h3 className="text-sm"> Post Category </h3>
+                  </Link>
                 </div>
               </div>
               <div className="flex item-center gap-2 font-bold">
@@ -127,7 +135,9 @@ const Admin = () => {
                   <FontAwesomeIcon icon={faImage} />
                 </div>
                 <div>
-                  <h3 className="text-sm"> Add Gallery </h3>
+                  <Link to="AddGallery">
+                    <h3 className="text-sm"> Add Gallery </h3>
+                  </Link>
                 </div>
               </div>
               <div className="flex item-center gap-2 font-bold">
@@ -135,7 +145,9 @@ const Admin = () => {
                   <FontAwesomeIcon icon={faUser} />
                 </div>
                 <div>
-                  <h3 className="text-sm"> Contact List </h3>
+                  <Link to="ContactList">
+                    <h3 className="text-sm"> Contact List </h3>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -174,60 +186,7 @@ const Admin = () => {
               <div className="font-bold "> Event Management Admin </div>
             </div>
           </div>
-
-          {/* Header 2 */}
-          <div className="bg-black w-full py-4">
-            <div className="grid grid-cols-7 text-white font-bold text-center">
-              <h1>No</h1>
-              <h1>Profile</h1>
-              <h1>Name</h1>
-              <h1>Email</h1>
-              <h1> Gender</h1>
-              <h1>Phone Number</h1>
-              <h1>Action</h1>
-            </div>
-          </div>
-
-          {/* content */}
-          <div className="w-full h-[81vh] overflow-y-auto py-2">
-            {usersList.map((elem, idx) => {
-              return (
-                <div
-                  key={idx}
-                  className="grid grid-cols-7 items-center text-black text-center border-2 border-l-0 border-r-0 border-b-neutral-300 border-t-0 pb-4 pt-4"
-                >
-                  <div>
-                    <h1> {elem.no} </h1>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <img
-                      className="size-10 rounded-full cursor-pointer"
-                      src={elem.profile}
-                      alt="sparks logo"
-                    />
-                  </div>
-                  <div>
-                    <h1> {elem.name} </h1>
-                  </div>
-                  <div>
-                    <h1> {elem.email} </h1>
-                  </div>
-                  <div>
-                    <h1> {elem.gender} </h1>
-                  </div>
-                  <div>
-                    <h1> {elem.phone}</h1>
-                  </div>
-                  <div>
-                    <button className="bg-green-900 active:scale-95 text-white text-sm font-bold px-4 py-3 rounded-md">
-                      {" "}
-                      Unblock{" "}
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          <Outlet />
         </div>
       </div>
     </>

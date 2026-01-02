@@ -17,6 +17,9 @@ import LoginHome from "./Pages/LoginHome";
 import Register from "./Pages/Register";
 import AddEvent from "./Pages/AddEvent";
 import PostCategory from "./Pages/PostCategory";
+import UserList from "./Pages/UserList";
+import AddGallery from "./Pages/AddGallery";
+import ContactList from "./Pages/ContactList";
 
 function App() {
   return (
@@ -34,11 +37,14 @@ function App() {
         <Route path="/Changepass" element={<Changepass />} />
         <Route path="/MyBookings" element={<MyBookings />} />
         <Route path="/ChangeUserDetail" element={<ChangeUserDetail />} />
-        <Route path="Admin" element={<Admin />} />
+        <Route path="/Admin" element={<Admin />}>
+          <Route index element={<UserList />} />
+          <Route path="AddEvent" element={<AddEvent />} />
+          <Route path="Category" element={<PostCategory />} />
+          <Route path="AddGallery" element={<AddGallery />} />
+          <Route path="ContactList" element={<ContactList />} />
+        </Route>
         <Route path="/Login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/Admin/AddEvent" element={<AddEvent />} />
-        <Route path="/Admin/Category" element={<PostCategory />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
     </>
