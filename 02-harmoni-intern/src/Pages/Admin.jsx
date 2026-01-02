@@ -175,6 +175,7 @@ const Admin = () => {
               {" "}
               <h1 className="text-lg font-bold "> Admin </h1>
             </div>
+            <Link to="Profile">
             <div className="flex gap-2 items-center">
               <div>
                 <img
@@ -185,6 +186,7 @@ const Admin = () => {
               </div>
               <div className="font-bold "> Event Management Admin </div>
             </div>
+            </Link>
           </div>
           <Outlet />
         </div>

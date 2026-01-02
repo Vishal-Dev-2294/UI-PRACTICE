@@ -20,6 +20,7 @@ import PostCategory from "./Pages/PostCategory";
 import UserList from "./Pages/UserList";
 import AddGallery from "./Pages/AddGallery";
 import ContactList from "./Pages/ContactList";
+import Profile from "./Pages/Profile";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path="Category" element={<PostCategory />} />
           <Route path="AddGallery" element={<AddGallery />} />
           <Route path="ContactList" element={<ContactList />} />
+          <Route path="Profile" element={<Profile />} />
         </Route>
         <Route path="/Login" element={<Login />} />
         <Route path="*" element={<Notfound />} />

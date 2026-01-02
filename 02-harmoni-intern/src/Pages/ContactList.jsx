@@ -8,70 +8,70 @@ const ContactList = () => {
       name: "Vishal Sharma",
       email: "vishal@gmail.com",
       phone: "9876543210",
-      message: "hey"
+      message: "hey",
     },
     {
       no: 2,
       name: "Anjali Verma",
       email: "anjali@gmail.com",
       phone: "9123456780",
-      message: "hii"
+      message: "hii",
     },
     {
       no: 3,
       name: "Rahul Singh",
       email: "rahul@gmail.com",
       phone: "9988776655",
-      message: "hello"
+      message: "hello",
     },
     {
       no: 4,
       name: "Priya Gupta",
       email: "priya@gmail.com",
       phone: "9090909090",
-      message: "heyyyy"
+      message: "heyyyy",
     },
     {
       no: 5,
       name: "Amit Kumar",
       email: "amit@gmail.com",
       phone: "9012345678",
-      message:"heloooo"
+      message: "heloooo",
     },
     {
       no: 6,
       name: "Neha Yadav",
       email: "neha@gmail.com",
       phone: "9345678123",
-      message:"hahaha"
+      message: "hahaha",
     },
     {
       no: 7,
       name: "Rohit Meena",
       email: "rohit@gmail.com",
       phone: "8887766554",
-      message:"ram ram"
+      message: "ram ram",
     },
     {
       no: 8,
       name: "Kajal Jain",
       email: "kajal@gmail.com",
       phone: "9876123456",
-      message:"majak se hatke"
+      message: "majak se hatke",
     },
     {
       no: 9,
       name: "Suresh Patel",
       email: "suresh@gmail.com",
       phone: "9998887776",
-      message:"yooo"
+      message: "yooo",
     },
     {
       no: 10,
       name: "Pooja Malhotra",
       email: "pooja@gmail.com",
       phone: "9786543210",
-      message:"ya boi"
+      message: "ya boi",
     },
   ];
   return (
