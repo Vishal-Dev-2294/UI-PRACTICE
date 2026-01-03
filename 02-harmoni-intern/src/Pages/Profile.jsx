@@ -53,7 +53,7 @@ const Profile = () => {
           </div>
         </div>
         <div>
-          <button className="px-4 py-2 active:scale-95 text-center rounded-md bg-blue-500 absolute right-1 bottom-2">
+          <button className="px-5 py-3 active:scale-95 text-center rounded-md bg-blue-500 absolute right-1 bottom-2">
             {" "}
             Update{" "}
           </button>
